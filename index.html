@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d20">
+<title>برای مهتاب، از طرف کسی که دوستت دارد</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+:root{--bg:#100d20;--pink:#f4a8c7;--cream:#fff0e8;--muted:#c9bbce}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#392344 0%,#191329 45%,#0d0b18 100%);color:var(--cream);font-family:'Vazirmatn',Tahoma,sans-serif;overflow-x:hidden}
+#stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;animation:twinkle 3s infinite ease-in-out}
+@keyframes twinkle{50%{opacity:.12;transform:scale(.6)}}
+.wrap{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 16px}
+.card{width:min(100%,650px);text-align:center;padding:clamp(25px,6vw,54px) clamp(20px,6vw,56px);border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ffffff06);box-shadow:0 25px 90px #0006;backdrop-filter:blur(12px)}
+.moon{font-size:48px;filter:drop-shadow(0 0 20px #f4c6df88);margin-bottom:10px}
+.eyebrow{color:var(--pink);font-size:13px;letter-spacing:2px;margin:0 0 14px}
+h1{font-size:clamp(32px,8vw,54px);font-weight:600;line-height:1.4;margin:0;color:#fff2f5}
+h1 span{color:var(--pink);text-shadow:0 0 28px #f4a8c766}
+.rule{width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--pink),transparent);margin:25px auto}
+.lead{font-size:clamp(16px,3.7vw,19px);line-height:2.2;color:#f3e6ed;font-weight:300}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:13px 27px;transition:.25s}
+.primary{background:linear-gradient(110deg,#f2b1ca,#e78caf);color:#281523;font-weight:600;box-shadow:0 8px 28px #e78caf38;margin-top:20px}
+.primary:hover{transform:translateY(-2px);box-shadow:0 12px 34px #e78caf55}
+.ghost{background:#ffffff10;border:1px solid #ffffff25;color:#fff;margin:8px}
+.hidden{display:none!important}
+.message{font-size:17px;line-height:2.35;color:#f7eaf0;text-align:justify;white-space:normal}
+.signature{color:var(--pink);font-size:18px;margin-top:25px}
+.heart{display:inline-block;color:#f5a5c5;animation:beat 1.3s infinite}
+@keyframes beat{50%{transform:scale(1.25)}}
+.footer{margin-top:28px;color:#a99aaf;font-size:12px}
+.petal{position:fixed;top:-30px;z-index:2;pointer-events:none;animation:fall linear forwards;opacity:.8}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<main class="wrap">
+<section class="card">
+  <div class="moon">☾</div>
+  <p class="eyebrow">یک نامه کوچک، برای یک آدمِ عزیز</p>
+  <div id="intro">
+    <h1>برای <span>مهتاب</span>،<br>روشناییِ روزهای من</h1>
+    <div class="rule"></div>
+    <p class="lead">بعضی آدم‌ها فقط وارد زندگی‌ات نمی‌شوند؛<br>آرام‌آرام معنیِ بعضی از قشنگ‌ترین حس‌ها می‌شوند.</p>
+    <button class="primary" id="open">یه چیزی برات دارم… ✨</button>
+  </div>
+  <div id="letter" class="hidden">
+    <h1>مهتابِ من <span class="heart">♥</span></h1>
+    <div class="rule"></div>
+    <div class="message">
+      شاید همیشه نتونم تمام چیزهایی رو که در دلم می‌گذره درست و کامل به زبون بیارم؛ اما می‌خوام بدونی بودنت برای من اتفاق کوچیکی نیست.
+      <br><br>
+      تو برای من یادآور اینی که هنوز می‌شه وسط شلوغیِ روزها، با فکر کردن به یک نفر لبخند زد. اینکه یک اسم می‌تونه حال آدم رو بهتر کنه، و یک نفر می‌تونه بی‌آنکه بدونه، به روزهای معمولی رنگ تازه‌ای بده.
+      <br><br>
+      نمی‌خوام قول‌های عجیب بدم؛ فقط دلم می‌خواد تا جایی که می‌تونم، با توجه، صداقت و مهربونی کنارت باشم. دوست دارم لبخندت رو ببینم، از آرزوهات بشنوم و در لحظه‌های ساده‌ی زندگی، سهمی از خوشحالی‌ات داشته باشم.
+      <br><br>
+      اگر قرار باشه از بین تمام اتفاق‌های این دنیا، یکی رو انتخاب کنم که بابتش لبخند بزنم، آشنایی با تو یکی از قشنگ‌ترین انتخاب‌هامه.
+    </div>
+    <p class="signature">دوستت دارم، مهتاب. <span class="heart">♥</span></p>
+    <button class="ghost" id="again">دوباره بخونمش 🌙</button>
+  </div>
+  <div class="footer">با عشق، برای تو که خاصی</div>
+</section>
+</main>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<90;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.opacity=(.2+Math.random()*.65);stars.appendChild(s)}
+function petals(){const p=document.createElement('span');p.className='petal';p.textContent=['♥','✦','♡'][Math.floor(Math.random()*3)];p.style.left=Math.random()*100+'vw';p.style.color=['#f4a8c7','#fff0e8','#d7b8ee'][Math.floor(Math.random()*3)];p.style.fontSize=(12+Math.random()*18)+'px';p.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),10000)}
+document.getElementById('open').addEventListener('click',()=>{document.getElementById('intro').classList.add('hidden');document.getElementById('letter').classList.remove('hidden');for(let i=0;i<24;i++)setTimeout(petals,i*90)});
+document.getElementById('again').addEventListener('click',()=>{document.getElementById('letter').classList.add('hidden');document.getElementById('intro').classList.remove('hidden')});
+</script>
+</body>
+</html>
